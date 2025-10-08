@@ -93,12 +93,12 @@ export default function Contact() {
                 <input className="form-input mt-1 block w-full  border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="John" name="name" type="text" required />
               </label>
 
-              <label className="block m-1 p-1 black-gradient border-1 rounded-lg">
+              <label className="block m-1 p-1 rounded-lg black-gradient border-1 ">
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Last Name</span>
                 <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="Doe" name="lastname" type="text" required />
               </label>
 
-              <label className="block m-1 p-1 black-gradient border-1 rounded-lg">
+              <label className="block m-1 p-1 rounded-lg black-gradient border-1">
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number</span>
                 <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="+12 345 678" name="phone" type="tel" required />
               </label>
