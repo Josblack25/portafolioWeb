@@ -107,7 +107,7 @@ export default function Nav() {
                   <ScrollLink
                     to={item.id}
                     smooth={true}
-                    offset={100} // Ajusta según tu layout
+                    offset={-100} // Ajusta según tu layout
                     duration={500}
                     onClick={() => {setActive(item.title); setToggle(false);}}
 

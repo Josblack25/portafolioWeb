@@ -36,7 +36,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 export default function About() {
   return (
-    <div id="about" className=" m-5 flex items-center flex-col ">
+    <div id="about" className=" mt-5 mb-7 flex items-center aling-center border flex-col">
 
       <motion.div
         variants={textVariant()}
@@ -47,20 +47,25 @@ export default function About() {
         </h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='max-w-[1000px] m-5 p-2 text-lg '
-      >
-        Todo comenzó con una hoja en blanco y una idea: ¿cómo puedo construir algo que no solo funcione, sino que se vea, se entienda y se celebre? <br />
-        <span  className={`${styles.sectionSubText}`}>Soy Adonis</span>, desarrollador autodidacta que aprendió a programar entre cursos gratuitos, bootcamps intensivos. <br />
-        Hoy, diseño sistemas interactivos con React, Flask, AWS, entre otros. <br />
-        He desarrollado dashboards, sistemas CRUD y interfaces animadas que celebran cada clic, detecto errores y los documento para que no vuelvan. <br />
-        Mis proyectos no solo resuelven problemas: los convierten en experiencias visuales.
-        Hoy, mi meta es reforzar mi perfil presentando cada avance como una pieza de diseño funcional. Porque para mí, cada bug corregido, cada animación fluida y cada tabla bien estructurada es una victoria que merece ser compartida.
+      <details class="text-secondary text-[17px] max-w-3xl leading-[30px] mt-3">
+        <summary class="cursor-pointer text-lime-400 hover:underline transition duration-300">
+          Ver más ▼
+        </summary>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='max-w-[1000px] m-5 p-2 text-lg '
+        >
+          Todo comenzó con una hoja en blanco y una idea: ¿cómo puedo construir algo que no solo funcione, sino que se vea, se entienda y se celebre? <br />
+          <span className={`${styles.sectionSubText}`}>Soy Adonis</span>, desarrollador autodidacta que aprendió a programar entre cursos gratuitos, bootcamps intensivos. <br />
+          Hoy, diseño sistemas interactivos con React, Flask, AWS, entre otros. <br />
+          He desarrollado dashboards, sistemas CRUD y interfaces animadas que celebran cada clic, detecto errores y los documento para que no vuelvan. <br />
+          Mis proyectos no solo resuelven problemas: los convierten en experiencias visuales.
+          Hoy, mi meta es reforzar mi perfil presentando cada avance como una pieza de diseño funcional. Porque para mí, cada bug corregido, cada animación fluida y cada tabla bien estructurada es una victoria que merece ser compartida.
 
-      </motion.p>
+        </motion.p>
+      </details>
 
-      <div className='m-6 flex flex-wrap gap-10'>
+      <div className='m-6  w-full flex justify-center items-center flex-wrap gap-10 ms:flex-col'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index}{...service} />
         ))}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {p3 , globe_location_pin, stacked_email} from "../assets/contact/index"
 export default function Contact() {
 
   const [result, setResult] = React.useState("");
@@ -28,14 +28,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center p-4 black-gradient font-display text-gray-800 dark:text-gray-200">
+    <section id="contact" className=" w-screen absolute m-h-screen mt-30 flex items-center justify-center p-4 black-gradient font-display text-gray-800 dark:text-gray-200">
       <div className="w-full max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center mt-[-50px]">
 
         {/* Left Side */}
         <div className="space-y-8 ">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">Hablemos</h1>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-4xl md:text-5xl font-bold text-cuarto dark:text-white">Hablemos</h1>
+            <p className="mt-4 text-lg text-cuarto">
               ¿Tienes un proyecto en mente o simplemente quieres saludar? <br /> Me encantaría saber de ti..
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function Contact() {
             {/* Email */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
-                <span className="material-symbols-outlined ">stacked_email</span>
+                <img src={stacked_email} alt="stacked suvg"/>
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 dark:text-white">Email</h3>
@@ -55,7 +55,7 @@ export default function Contact() {
             {/* Location */}
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
-                <span className="material-symbols-outlined">globe_location_pin</span>
+                <img src={globe_location_pin} alt="globe suvg"/>
               </div>
               <div>
                 <h3 className="font-bold text-gray-900 dark:text-white">Location</h3>
@@ -68,7 +68,7 @@ export default function Contact() {
 
               <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center">
 
-                <span className="material-symbols-outlined">3p</span>
+                <img src={p3} alt="p3 suvg" />
               </div>
               <div>
 
@@ -76,7 +76,6 @@ export default function Contact() {
                 <div className="flex gap-4 mt-1">
                   <a className="text-primary hover:underline" href="#">GitHub</a>
                   <a className="text-primary hover:underline" href="#">LinkedIn</a>
-                  <a className="text-primary hover:underline" href="#">Twitter</a>
                 </div>
               </div>
             </div>
