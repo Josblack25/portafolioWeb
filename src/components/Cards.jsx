@@ -1,32 +1,27 @@
-import React, { useState } from 'react';
-import { proyectos} from '../constants'
+import { useState } from 'react';
 import {github} from '../assets/tech'
 import { styles } from '../styles'
 
 
 
 
-  
-const Cards= ({id, name, description, tags,  image,  source_code_link,  }) => {
+export default function Cards ({id, name, description, tags,  image,  source_code_link,  }) {
 
   const [rotate, setrotate] = useState(false); // rotacion de las tarjetas
     
 
     return (
 
-      <div className={`${styles.paddinX} card-container container relative  sm:w-[560px] w-full  flex items-center justify-center gap-3.5 rounded-3xl 
-      ${rotate ? 'rotateY-180' : 'rotateY-  0'}`} 
-      
+      <div className={`${styles.paddinX} card-container ${rotate ? 'rotateY-180' : 'rotateY-0'}`} 
       onClick={() => setrotate(!rotate)}
       >
 
 
-        <div className={`${styles.paddinX} card borde border-violet-700 w-[650px]  h-[400px]
-          `}>
+        <div className={`${styles.paddinX} card`}>
             
-            <div className='front borde  bg-violet-500 '>
+            <div className='front'>
 
-                <img src={image} alt="preject-image" className='w-full h-full object-center rounded '/>
+                <img src={image} alt="preject-image" className='object-cover rounded-lg '/>
 
                 <div className='absolute inset-0 flex justify-end m-3 card-img_hover '>
                   
@@ -64,9 +59,3 @@ const Cards= ({id, name, description, tags,  image,  source_code_link,  }) => {
 
     )
 }
-
-
-
-
-
-export default Cards;

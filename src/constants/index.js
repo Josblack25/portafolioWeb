@@ -1,13 +1,13 @@
 import {carrent, jobit} from '../assets/project'
 
 import {javascript, tailwind, reactjs,
-docker, github } from '../assets/tech'
+docker, github, python, flask, aws} from '../assets/tech'
 
 
 export const navLinks = [
     {
-      id: "project",
-      title: "Project",
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "about",
@@ -28,24 +28,16 @@ const buttomsGroup = [
       id: "backend",
       title: "Backend",
     },
-    {
-      id: "bloackchain",
-      title: "Blockchain",
-    },
 ]
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'JavaScrip',
     icon: javascript,
   },
   {
     title: 'React JS',
     icon: reactjs
-  },
-  {
-    title: 'tailwind',
-    icon: tailwind
   },
   {
     title: 'docker',
@@ -54,6 +46,14 @@ const services = [
   {
     title: 'github',
     icon: github
+  },
+  {
+    title: 'Flask',
+    icon: flask
+  },
+  {
+    title: 'AWS',
+    icon: aws
   }
   
 ]

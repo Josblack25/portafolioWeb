@@ -27,7 +27,7 @@ const Computers = (isMobile) => {
       <spotLight position={[-20, 50, 10]} angle={0.15} penumbra={1} intensity={1} castShadow shadow-mapSize={1024}/>
       {/* renderizamos el objeto, ajustamos escala y la posicion en matriz[z,y,x], agregamos rotacion e inclinacion*/}
       <primitive object={computer.scene}
-        scale={isMobile ? 0.55 : 0.75}
+        scale={isMobile ? 0.75 : 0.55}
         position={isMobile ? [0, -2.2, -2.2] : [-1, -2.5, -3.30]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -44,7 +44,7 @@ const Computers = (isMobile) => {
    /* establecemos el suspenso para integrar nuestro cargador. directo de react  */
    /* control de movimiento orbitcontrol */
 
-const ComputersCanvas = () => {
+export default function ComputersCanvas () {
 
   const [isMobile, setisMobile] = useState(false)
 
@@ -96,6 +96,3 @@ const ComputersCanvas = () => {
 
   )
 }
-
-export default ComputersCanvas;
-

@@ -1,16 +1,16 @@
-import html from "./html.png";
-import css from "./css.png";
+
+
 import javascript from "./javascript.png";
-import typescript from "./typescript.png";
 import tailwind from "./tailwind.png";
 import reactjs from "./reactjs.png";
 import docker from "./docker.png";
-import figma from "./figma.png";
-import git from "./git.png";
 import github from "./github.png";
+import python from "./python.svg"
+import flask from "./flask.svg"
+import aws from "./aws.svg"
 
 
-export {html, css, javascript, typescript, tailwind, reactjs,
-docker, figma, git, github 
+export {javascript, tailwind, reactjs,
+docker, github, python, flask, aws   
 
 };
