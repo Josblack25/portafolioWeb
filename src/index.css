@@ -16,7 +16,7 @@
 @theme {
 
   --color-primario: #3e0369;
-  --color-secundario: #510d94;
+  --color-secundario: #7e00fc;
   --color-terciario: #cccc;
   --color-cuarto: #f8f8f8;
   --color-baground: #5300a0;
@@ -65,7 +65,7 @@ body {
       #440385 0%,
       rgba(60, 51, 80, 0) 100%);
 }
-
+  
 .type {
 
   display: block;

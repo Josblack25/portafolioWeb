@@ -100,19 +100,20 @@ export default function Nav() {
           <div className={`${!toggle ? "hidden" : "flex"} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='lis-note flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((item) => (
-            <li key={item.id}
-              className={`${active === item.title ? 'text-white' : 'text-gray-400'} cursor-pointer transition duration-300 ease-in-out hover:text-lime-400`}
-            // Marca el enlace como activo
-            >
-              <ScrollLink
-                to={item.id}
-                smooth={true}
-                offset={100} // Ajusta según tu layout
-                duration={500}
-                onClick={() => setActive(item.title)}
-              >
-                {item.title}
-              </ScrollLink>
+                <li key={item.id}
+                  className={`${active === item.title ? 'text-white' : 'text-gray-400'} cursor-pointer transition duration-300 ease-in-out hover:text-lime-400`}
+                // Marca el enlace como activo
+                >
+                  <ScrollLink
+                    to={item.id}
+                    smooth={true}
+                    offset={100} // Ajusta según tu layout
+                    duration={500}
+                    onClick={() => {setActive(item.title); setToggle(false);}}
+
+                  >
+                    {item.title}
+                  </ScrollLink>
                 </li>
               ))}
             </ul>
