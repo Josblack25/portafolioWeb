@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/vite": "^4.1.14",
     "@types/three": "^0.175.0",
     "maath": "^0.10.8",
@@ -22,7 +23,6 @@
     "react-router-dom": "^7.4.1",
     "react-scroll": "^1.9.3",
     "react-vertical-timeline-component": "^3.5.3",
-    "tailwindcss": "^4.1.14",
     "three": "^0.175.0"
   },
   "devDependencies": {
@@ -30,10 +30,13 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react-swc": "^3.8.0",
+    "autoprefixer": "^10.4.22",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
     "vite": "^6.2.0"
   }
 }

@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className=" w-screen absolute m-h-screen mt-30 flex items-center justify-center p-4 black-gradient font-display text-gray-800 dark:text-gray-200">
+    <section id="contact" className=" w-screen absolute m-h-screen mt-30 flex items-center justify-center p-4 black-gradient font-display text-white">
       <div className="w-full max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center mt-[-50px]">
 
         {/* Left Side */}
@@ -47,8 +47,8 @@ export default function Contact() {
                 <img src={stacked_email} alt="stacked suvg"/>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 dark:text-white">Email</h3>
-                <a className="text-primary hover:underline" href="mailto:hello@example.com">adonisjosuedaller26@gmail.com</a>
+                <h3 className="font-bold text-white">Email</h3>
+                <a className="text-primary hover:underline text-gray-400" href="mailto:hello@example.com">adonisjosuedaller26@gmail.com</a>
               </div>
             </div>
 
@@ -58,8 +58,8 @@ export default function Contact() {
                 <img src={globe_location_pin} alt="globe suvg"/>
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 dark:text-white">Location</h3>
-                <p className="text-gray-600 dark:text-gray-400">Venezuela</p>
+                <h3 className="font-bold text-white">Location</h3>
+                <p className="text-gray-400">Venezuela</p>
               </div>
             </div>
 
@@ -72,10 +72,10 @@ export default function Contact() {
               </div>
               <div>
 
-                <h3 className="font-bold text-gray-900 dark:text-white">Socials</h3>
+                <h3 className="font-bold text-white">Socials</h3>
                 <div className="flex gap-4 mt-1">
-                  <a className="text-primary hover:underline" href="#">GitHub</a>
-                  <a className="text-primary hover:underline" href="#">LinkedIn</a>
+                  <a className="text-primary hover:underline text-gray-400" href="#">GitHub</a>
+                  <a className="text-primary hover:underline text-gray-400" href="#">LinkedIn</a>
                 </div>
               </div>
             </div>
@@ -89,31 +89,31 @@ export default function Contact() {
 
             <div className="grid sm:grid-cols-2 gap-6">
               <label className="block m-1 p-1 rounded-lg black-gradient border-1">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">First Name</span>
-                <input className="form-input mt-1 block w-full  border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="John" name="name" type="text" required />
+                <span className="text-sm font-medium text-white">First Name</span>
+                <input className="form-input mt-1 block w-full  border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 :text-white" placeholder="John" name="name" type="text" required />
               </label>
 
               <label className="block m-1 p-1 rounded-lg black-gradient border-1 ">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Last Name</span>
-                <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="Doe" name="lastname" type="text" required />
+                <span className="text-sm font-medium text-white">Last Name</span>
+                <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-white" placeholder="Doe" name="lastname" type="text" required />
               </label>
 
               <label className="block m-1 p-1 rounded-lg black-gradient border-1">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number</span>
-                <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="+12 345 678" name="phone" type="tel" required />
+                <span className="text-sm font-medium text-white">Phone Number</span>
+                <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-white" placeholder="+12 345 678" name="phone" type="tel" required />
               </label>
             </div>
 
 
 
             <label className="block black-gradient border-1 rounded-lg">
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Email Address</span>
-              <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="  john.doe@example.com" name="email" type="email" required />
+              <span className="text-sm font-medium text-white">Email Address</span>
+              <input className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-white" placeholder="  john.doe@example.com" name="email" type="email" required />
             </label>
 
             <label className="block black-gradient border-1 rounded-lg">
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Message</span>
-              <textarea className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-gray-900 dark:text-white" placeholder="Your message here..." name="email" rows="4" required />
+              <span className="text-sm font-medium text-white">Message</span>
+              <textarea className="form-input mt-1 block w-full border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 text-white" placeholder="Your message here..." name="email" rows="4" required />
             </label>
 
             <button

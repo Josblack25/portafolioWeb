@@ -24,18 +24,14 @@ export default function Projects() {
 
             <h2 className={`${styles.heroHeadText} `}>Projects</h2>
 
-            <details class="text-secondary text-[17px] max-w-3xl leading-[30px] mt-3">
-                <summary class="cursor-pointer text-lime-400 hover:underline transition duration-300">
-                    Ver más ▼
-                </summary>
-                <p class="mt-2">
+                <p className=" w-2xl text-[20px] mt-2 ">
                     Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos reales de mi trabajo.
                     Cada proyecto se describe brevemente con enlaces a repositorios de código y demostraciones en vivo.
                     Esto refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos eficazmente.
                 </p>
-            </details>
 
-            <nav className='w-full flex inline-flex m-5 shadow-xs items-center groupbuttoms '>
+
+            <nav className='w-full flex m-5 shadow-xs items-center groupbuttoms '>
 
                 <ul className="flex gap-4">
                     {buttomsGroup.map((button) => (

@@ -32,7 +32,6 @@
 body {
 
   background: -webkit-linear-gradient(-90deg, #0e0a18 0%, rgba(60, 51, 80, 0) 100%);
-
 }
 
 
@@ -270,6 +269,10 @@ body {
 
 }
 
+/* pojects */
+
+
+
 .card-container {
   width: 450px;
   perspective: 1200px;
@@ -383,6 +386,25 @@ body {
   height: 500px;
   margin-top: 10px;
 }
+
+/* index.css (ensure it's imported once in main.jsx) */
+.details-text {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 4 !important;
+  overflow: hidden !important;
+  line-clamp: 4;
+  text-overflow: ellipsis;
+}
+
+details[open] .details-text {
+  -webkit-line-clamp: unset !important;
+  line-clamp: unset;
+  display: block !important;
+  overflow: visible !important;
+}
+
+
 
 /* contac */
 
