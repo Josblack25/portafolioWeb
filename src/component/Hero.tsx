@@ -1,7 +1,17 @@
 'use client';
 
-import ComputerCanvas from './ui/canvas/ComputerCanvas';
-import StarCanvas from './ui/canvas/start/StarCanvas';
+import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
+
+const ComputerCanvas = dynamic(
+    () => import('./ui/canvas/ComputerCanvas'),
+    { ssr: false }
+);
+
+const StarCanvas = dynamic(
+    () => import('./ui/canvas/start/StarCanvas'),
+    { ssr: false }
+);
 
 export default function Hero() {
     return (
