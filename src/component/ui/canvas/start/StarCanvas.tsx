@@ -18,7 +18,6 @@ const StarCanvas = () => {
         setIsMounted(true);
     }, []);
 
-    if (!isMounted) return null;
 
     return (
         <div className="w-full h-auto absolute inset-0 z-[-1]">

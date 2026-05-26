@@ -17,8 +17,6 @@ const ComputerCanvas = () => {
         setIsMounted(true);
     }, []);
 
-    if (!isMounted) return null;
-
     useEffect(() => {
         // comprobacion dispositivo mobile
         const mediaQuery = window.matchMedia(('max-width: 500px'));
