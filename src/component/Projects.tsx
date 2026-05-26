@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { AnimatePresence } from 'motion/react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 import proyectos from '../constants/project';
 import Cards from './ui/cards/Cards';

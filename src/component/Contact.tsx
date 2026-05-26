@@ -1,3 +1,4 @@
+"use client"
 import ThreeSphere from './ui/esphere/ThreeSphere';
 import ContactForm from './contac/ContactForm';
 

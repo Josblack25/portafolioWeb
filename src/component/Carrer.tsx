@@ -1,3 +1,4 @@
+"use client"
 export default function Education() {
     return (
         <section className="py-24 px-6 md:px-16 max-w-7xl mx-auto w-full" id="education">

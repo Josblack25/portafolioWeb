@@ -1,3 +1,4 @@
+"use client"
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
 import { fadeIn } from '../../utils/motion';
