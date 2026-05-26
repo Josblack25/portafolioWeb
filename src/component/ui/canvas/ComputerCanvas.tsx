@@ -11,6 +11,14 @@ const ComputerCanvas = () => {
     // para manejar el responsive 
     const [isMobile, setIsMobile] = useState<boolean>(false);
 
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMounted) return null;
+
     useEffect(() => {
         // comprobacion dispositivo mobile
         const mediaQuery = window.matchMedia(('max-width: 500px'));
@@ -36,6 +44,7 @@ const ComputerCanvas = () => {
             <Canvas
                 frameloop='demand'
                 shadows
+                dpr={[1, 2]}
                 camera={{ position: [20, 3, 5], fov: 25 }}
                 gl={{ preserveDrawingBuffer: true }}
             >
