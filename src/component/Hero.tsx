@@ -1,7 +1,7 @@
 'use client';
 
-import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
+
 
 const ComputerCanvas = dynamic(
     () => import('./ui/canvas/ComputerCanvas'),
@@ -39,7 +39,7 @@ export default function Hero() {
                             <a href="#projects">Ver Proyectos</a>
                         </button>
                         <button className="cursor-pointer bg-primary text-neutral font-bold py-3.5 md:py-3 px-6 rounded-lg hover:bg-tertiary transition-colors shadow-[0_0_15px_rgba(0,212,255,0.4)] text-sm md:text-base">
-                            <a href="#">CV</a>
+                            <a href="CV-ADONISDALLERTecO.pdf" target='_blank' >CV</a>
                         </button>
                     </div>
                 </div>

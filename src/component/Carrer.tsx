@@ -18,17 +18,17 @@ export default function Education() {
                     <div className="bg-surface/40 backdrop-blur-md border border-surface-bright p-6 rounded-2xl md:w-2/3 shadow-lg hover:border-primary/50 transition-colors duration-300">
                         <div className="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
                             <h3 className="text-on-surface font-semibold text-xl md:text-2xl">
-                                Estudiante Universitario
+                                TSU en Informatica
                             </h3>
                             <span className="text-neutral bg-primary px-4 py-1 rounded-full text-sm font-bold inline-block w-max shadow-[0_0_10px_rgba(0,212,255,0.3)]">
-                                Actualidad
+                                2026 - 2029
                             </span>
                         </div>
                         <h4 className="text-tertiary font-medium mb-4 text-lg">
                             Instituto Universitario Jesús Obrero (IUJO)
                         </h4>
                         <p className="text-on-surface/80 text-sm md:text-base leading-relaxed">
-                            Formación académica superior en Barquisimeto, desarrollando bases sólidas en lógica, tecnología y resolución de problemas para aplicarlos en el ecosistema digital y de software.
+                            Formación académica superior en Instituto Universitario Jesus Obrero (IUJO) Barquisimeto, desarrollando bases sólidas en lógica, tecnología y resolución de problemas para aplicarlos en el ecosistema digital y de software.
                         </p>
                     </div>
                 </div>
@@ -44,14 +44,14 @@ export default function Education() {
                                 Desarrollo Web Full-Stack
                             </h3>
                             <span className="text-tertiary bg-surface-bright px-4 py-1 rounded-full text-sm font-medium border border-tertiary/20 inline-block w-max">
-                                Aprendizaje Continuo
+                                2024 - 2025
                             </span>
                         </div>
                         <h4 className="text-tertiary font-medium mb-4 text-lg">
-                            Especialización Autodidacta
+                            SOCIAL OPLESK ACADEMY
                         </h4>
                         <p className="text-on-surface/80 text-sm md:text-base leading-relaxed">
-                            Transición y especialización profunda en desarrollo backend y frontend. Dominio práctico de arquitecturas modernas construyendo soluciones reales con Next.js, React, TypeScript, Python (FastAPI) y flujos de automatización con n8n.
+                            Formación académica en el área de desarrollo web con enfoque en full-stack, abarcando tecnologías modernas como React, TypeScript, Python (Flask), base de datos (PostgreSQL), Git, Docker y la metodología de trabajo ágil Scrum.
                         </p>
                     </div>
                 </div>
